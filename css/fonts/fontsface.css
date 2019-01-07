@@ -1,0 +1,59 @@
+@font-face{
+	font-family: Baskerville;
+	src: local('Baskerville.ttf'), url('Baskerville.ttf');
+
+	font-family: Didot;
+	src: local('Didot.ttf'), url('Didot.ttf');
+
+	font-family: Kefa;
+	src: local('Kefa.ttf'), url('Kefa.ttf');
+
+	font-family: Kefa-Regular;
+	src: local('Kefa-Regular.ttf'), url('Kefa-Regular.ttf');
+
+	font-family: RocketClouds;
+	src: local('RocketClouds.ttf'), url('RocketClouds.ttf');
+}
+.font-home{
+	font: 22px RocketClouds;
+}
+.font-menu{
+	font: 18px Kefa-Regular;
+}
+.font-title{
+	font: 26px RocketClouds;
+}
+.font-text{
+	font: 14px RocketClouds;
+}
+
+.font-text1{
+	font: 20px Kefa-Regular;
+	color: #ffffffb8;
+}
+
+.about{
+	font: 16px Baskerville;
+	font-style: italic;
+	color: #d8e7f3;
+	text-align: justify;
+}
+.h2{
+	font: 32px Baskerville;
+	font-style: italic;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    color: white;
+    background-color: #ded4d491;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}

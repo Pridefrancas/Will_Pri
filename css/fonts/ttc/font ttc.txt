@@ -1,0 +1,3 @@
+Tipo de font .ttc não se utiliza no .css
+
+Optei por adicionar fonts .ttf
