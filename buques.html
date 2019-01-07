@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/gif" href="favicon/favico.png" >
+	<meta charset="utf-8">
+	<title>Buquês</title>
+	<link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.min.css">
+</head>
+<body>
+
+<a data-fancybox="gallery" href="img/buques/buque.jpg">
+	<img src="img/buques/buquethumb.jpg">
+</a>
+
+<a data-fancybox="gallery" href="img/buques/buque2.jpg" hidden>
+	<img src="img/buques/buque2thumb.jpg">
+</a>
+
+<a data-fancybox="gallery" href="img/buques/buque3.jpg" hidden>
+	<img src="img/buques/buque3thumb.jpg">
+</a>
+
+<a data-fancybox="gallery" href="img/buques/buque4.jpg" hidden>
+	<img src="img/buques/buque4thumb.jpg">
+</a>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="fancybox/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript">
+	$('[data-fancybox="gallery"]').fancybox({
+  thumbs : {
+    autoStart : true
+  }
+})
+</script>
+</body>
+</html>
