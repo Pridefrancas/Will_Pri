@@ -7,32 +7,60 @@
 	<link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.min.css">
 </head>
 <body>
+	<div class="row justify-content-center no-gutters">
+		<a class="fancybox" data-fancybox="buque" href="img/buquehome.jpg">Open gallery</a>
+		<div class="col-lg-6">
+          	<a data-fancybox="buque" href="img/buques/buque.jpg">
+          		<img class="img-fluid" src="img/buquehome.jpg" alt="">
+          	</a>          	
+            <a data-fancybox="buque" href="img/buques/buque0.jpg" hidden="true">
+            <img src="img/buques/buque0.jpg">
+            </a>
+          	<a data-fancybox="buque" href="img/buques/buque01.jpg"></a>
+          	<a data-fancybox="buque" href="img/buques/buque02.jpg"></a>
+          	<a data-fancybox="buque" href="img/buques/buque03.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque04.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque05.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque06.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque07.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque08.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque09.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque10.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque11.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque12.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque13.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque14.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque15.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque16.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque17.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque18.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque19.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque20.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque21.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque22.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque23.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque24.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque25.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque26.jpg"></a>
+            <a data-fancybox="buque" href="img/buques/buque27.jpg"></a>
 
-<a data-fancybox="gallery" href="img/buques/buque.jpg">
-	<img src="img/buques/buquethumb.jpg">
-</a>
-
-<a data-fancybox="gallery" href="img/buques/buque2.jpg" hidden>
-	<img src="img/buques/buque2thumb.jpg">
-</a>
-
-<a data-fancybox="gallery" href="img/buques/buque3.jpg" hidden>
-	<img src="img/buques/buque3thumb.jpg">
-</a>
-
-<a data-fancybox="gallery" href="img/buques/buque4.jpg" hidden>
-	<img src="img/buques/buque4thumb.jpg">
-</a>
+          </div>
+      </div>
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="fancybox/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
-	$('[data-fancybox="gallery"]').fancybox({
-  thumbs : {
-    autoStart : true
-  }
-})
+	$(".fancybox")
+    .attr('rel', 'buque')
+    .fancybox({
+        padding : 0
+    });
+	$('[data-fancybox="buque"]').fancybox({
+    		thumbs : {
+    			autoStart : true
+    		}
+    	})
 </script>
 </body>
 </html>
