@@ -7,9 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.min.css">
 </head>
 <body>
-	<div class="row justify-content-center no-gutters">
-		<a class="fancybox" data-fancybox="buque" href="img/buquehome.jpg">Open gallery</a>
-		<div class="col-lg-6">
+	<a class="fancybox" data-fancybox="buque" href="img/buquehome.jpg">Open gallery</a>
+		<div class="small-slider">
           	<a data-fancybox="buque" href="img/buques/buque.jpg">
           		<img class="img-fluid" src="img/buquehome.jpg" alt="">
           	</a>          	
@@ -44,23 +43,72 @@
             <a data-fancybox="buque" href="img/buques/buque26.jpg"></a>
             <a data-fancybox="buque" href="img/buques/buque27.jpg"></a>
 
-          </div>
       </div>
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="fancybox/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
-	$(".fancybox")
-    .attr('rel', 'buque')
-    .fancybox({
-        padding : 0
-    });
-	$('[data-fancybox="buque"]').fancybox({
-    		thumbs : {
-    			autoStart : true
-    		}
-    	})
+	// Open thumbs view straight away for demo purposes
+$.fancybox.defaults.thumbs.autoStart = true;
+
+// ============================
+// Init 1st slider and fancybox
+// ============================
+
+// fancybox
+$().fancybox({
+  selector : '.main-slider .slick-slide:not(.slick-cloned)',
+  backFocus : false
+});
+
+// Slick
+$(".main-slider").slick({
+  slidesToShow   : 3,
+  infinite : true,
+  dots     : false,
+  arrows   : false
+});
+
+// ============================
+// Init 2nd slider and fancybox
+// ============================
+
+// fancybox
+$().fancybox({
+  selector : '.small-slider .slick-slide:not(.slick-cloned)',
+  backFocus : false,
+  afterShow : function( instance, current ) {
+    current.opts.$orig.closest(".slick-initialized").slick('slickGoTo', parseInt(current.index), true);
+  }
+});
+
+// Slick
+// =====
+
+$(".small-slider").slick({
+  slidesToShow   : 1,
+  infinite : true,
+  dots     : false,
+  arrows   : false
+});
+
+// ================================================
+// Attach custom click event on cloned elements, 
+// trigger click event on corresponding link.
+// Note: This will work for all sliders on the page
+// ================================================
+$(document).on('click', '.slick-cloned', function(e) {
+  var $slides = $(this)
+    .parent()
+    .children('.slick-slide:not(.slick-cloned)');
+
+  $slides
+    .eq( ( $(this).attr("data-slick-index") || 0) % $slides.length )
+    .trigger("click.fb-start", { $trigger: $(this) });
+
+  return false;
+});
 </script>
 </body>
 </html>
