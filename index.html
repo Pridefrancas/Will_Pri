@@ -21,152 +21,61 @@
   </head>
 
   <body id="page-top">
-
-
-
     <!-- Navigation -->
-
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-
       <div class="container">
-
         <a class="navbar-brand js-scroll-trigger font-home" href="#page-top">De Flor e Alma</a>
-
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-
-          Menu
-
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu
           <i class="fas fa-bars"></i>
-
         </button>
-
         <div class="collapse navbar-collapse" id="navbarResponsive">
-
           <ul class="navbar-nav ml-auto">
-
             <li class="nav-item">
-
               <a class="nav-link js-scroll-trigger font-menu" href="#about">Sobre Nós</a>
-
             </li>
-
             <li class="nav-item">
-
               <a class="nav-link js-scroll-trigger font-menu" href="#projects">Portfólio</a>
-
             </li>
-
             <li class="nav-item">
-
               <a class="nav-link js-scroll-trigger font-menu" href="#signup">Contato</a>
-
             </li>
-
           </ul>
-
         </div>
-
       </div>
-
     </nav>
-
-
-
     <!-- Header -->
-
     <header class="masthead">
-
       <div class="container d-flex h-100 align-items-center">
-
         <div class="mx-auto text-center">
-
          <!-- <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-
           <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>-->
-
           <!--<a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>-->
-
           <img src="img/logosemfundo_branco.png" class="img-fluid" alt="">
-
         </div>
-
       </div>
-
     </header>
-
-<!-- Sobre Nós -->
-
-    <section id="about" class="signup-section">
-
+    <!-- Sobre Nós -->
+    <section id="about" class="about-section">
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-8 mx-auto">
-
             <h2 class="text-white mb-4 font-title">Sobre Nós</h2>
-
             <p class="font-text1 text-background">
-
               Olá, sou a Aline, advogada por formação, mas desde sempre minha vida cruzou com esse mundo florido e cheio de detalhes dos casamentos e decorações.
-
             </p>
-
             <p class="font-text1 text-background">
-
               Sempre estive de forma despretensiosa envolvida nas decorações dos amigos e da família, mas somente após o meu casamento (2015) onde produzi cada detalhe, tirei esse sonho do papel e de forma gradativa fui começando a viver nesse mundo que tanto me encantava e me aprofundar nessa profissão que hoje exerço de forma integral e não me vejo mais sem.
-
             </p>
-
             <p class="font-text1 text-background">
-
               A De Flor e Alma surgiu para traduzir tudo que sempre mais amei, o romantismo, o vintage, a leveza, a simplicidade dos detalhes, no trabalho feito a mão peça por peça e no trabalho em família, pois por aqui mãe e marido estão também em todos os projetos. Então vamos juntos florir e sonhar esse grande dia!
-
             </p>
-
            <!-- <img src="img/logo_foot.png" class="img-fluid" alt="">-->
-
           </div>
-
         </div>
-
       </div>
-
     </section>    
-
     <!-- Projects Section -->
-
     <section id="projects" class="projects-section bg-light">
-
-      <div class="container">
-
-        <!-- Featured Project Row -->
-
-        <!--<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-
-          <div class="col-xl-8 col-lg-7">
-
-            <img class="img-fluid mb-3 mb-lg-0" src="img/s.jpg" alt="">
-
-          </div>
-
-          <div class="col-xl-4 col-lg-5">
-
-            <div class="featured-text text-center text-lg-left font-text">
-
-              <p>Portifólio</p>
-
-              <p class="text-black-50 mb-0 font-menu">
-
-                Acompanhe alguns de nossos trabalhos!
-
-              </p>
-
-            </div>-->
-
-          </div>
-
-        </div>
         <!-- Project One Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
 	       	<div class="col-lg-6">
@@ -179,9 +88,9 @@
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <a data-fancybox="casamentos" href="img/decor.jpg" class="text font-title"> Casamentos </a>
+                  <a id="divwed" data-fancybox-trigger="casamentos" href="javascript:;" class="text font-title"> Casamentos </a>
                   <!--<p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>-->
-                  <hr class="d-none d-lg-block mb-0 ml-0">
+                  <hr id="hrwed" class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
             </div>
@@ -226,9 +135,9 @@
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                    <a id="bouquet" href="javascript:;" class="font-title"> Buquês </a>
+                    <a id="divbq" data-fancybox-trigger="buque" href="javascript:;" class="font-title"> Buquês </a>
                   <!--<p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p> -->
-                  <hr class="d-none d-lg-block mb-0 mr-0">
+                  <hr id="hrbq" class="d-none d-lg-block mb-0 mr-0">
                 </div>
               </div>
             </div>
@@ -287,283 +196,129 @@
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> <br><br>
 
             <h2 class="text-white mb-5 font-title">Queremos fazer parte do seu sonho!</h2>
-
-<section class="contact-section">   
-        <div class="row">
-          <div class="col-md-4 mb-3 mb-md-0">
-
-            <div class="card py-4 h-100">
-
-              <div class="card-body text-center">
-
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-
-                <h4 class="text-uppercase m-0">Endereço</h4>
-
-                <hr class="my-4">
-
-                <div class="small">Guarulhos, São Paulo - SP</div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-          <div class="col-md-4 mb-3 mb-md-0">
-
-            <div class="card py-4 h-100">
-
-              <div class="card-body text-center">
-
-                <i class="fas fa-envelope text-primary mb-2"></i>
-
-                <h4 class="text-uppercase m-0">Email</h4>
-
-                <hr class="my-4">
-
-                <div class="small">
-
-                <a href="mailto:contato@deflorealma.com.br" target="_top">contato@deflorealma.com.br</a>
-
+            <section class="contact-section">
+              <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">Endereço</h4>
+                      <hr class="my-4">
+                      <div class="small">Guarulhos, São Paulo - SP</div>
+                    </div>
+                  </div>
                 </div>
-
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-envelope text-primary mb-2"></i>
+                    <h4 class="text-uppercase m-0">Email</h4>
+                    <hr class="my-4">
+                    <div class="small">
+                      <a href="mailto:contato@deflorealma.com.br" target="_top">contato@deflorealma.com.br</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-            </div>
-
-          </div>
-
-
-
-          <div class="col-md-4 mb-3 mb-md-0">
-
-            <div class="card py-4 h-100">
-
-              <div class="card-body text-center">
-
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-
-                <h4 class="text-uppercase m-0">Contato</h4>
-
-                <hr class="my-4">
-
-                <div class="small">+55 (11) 9 9298-6994</div>
-
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                    <h4 class="text-uppercase m-0">Contato</h4>
+                    <hr class="my-4">
+                    <div class="small">+55 (11) 9 9298-6994</div>
+                  </div>
+                </div>
               </div>
-
             </div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="social d-flex justify-content-center">
-
-          <!--<a href="#" class="mx-2">
-
-            <i class="fab fa-twitter"></i>
-
-          </a>-->
-
-          <a href="https://www.facebook.com/pertedecor/" class="mx-2">
-
-            <img src="icon/facebook.png" width="32px" height="32px">
-
-            <i class="fab fa-facebook-f"></i>
-
-          </a>
-
-          <a href="https://www.instagram.com/pertedecor/" class="mx-2">
-
-            <img src="icon/instagram.png" width="32px" height="32px">
-
-            <i class="fab fa-instagram" ></i>
-
-          </a>
-
-        </div>
-
-
-
-      
-
-    </section>
-
+            <div class="social d-flex justify-content-center">
+              <!--<a href="#" class="mx-2">
+                <i class="fab fa-twitter"></i>
+              </a>-->
+                <a href="https://www.facebook.com/pertedecor/" class="mx-2">
+                  <img src="icon/facebook.png" width="32px" height="32px">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/pertedecor/" class="mx-2">
+                    <img src="icon/instagram.png" width="32px" height="32px">
+                    <i class="fab fa-instagram" ></i>
+                 </a>
+              </div>
+            </section>
             <!--<form class="form-inline d-flex">
-
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-
-            </form>-->
-
-
-
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>-->
           </div>
-
         </div>
-
       </div>
-
     </section>
-
-
-
     <!-- Contact Section -->
-
    <!--<section class="contact-section bg-black">
-
       <div class="container">
-
-
-
         <div class="row">
-
-
-
           <div class="col-md-4 mb-3 mb-md-0">
-
             <div class="card py-4 h-100">
-
               <div class="card-body text-center">
-
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-
                 <h4 class="text-uppercase m-0">Endereço</h4>
-
                 <hr class="my-4">
-
                 <div class="small text-black-50">Guarulhos, São Paulo - SP</div>
-
               </div>
-
             </div>
-
           </div>
-
-
-
           <div class="col-md-4 mb-3 mb-md-0">
-
             <div class="card py-4 h-100">
-
               <div class="card-body text-center">
-
                 <i class="fas fa-envelope text-primary mb-2"></i>
-
                 <h4 class="text-uppercase m-0">Email</h4>
-
                 <hr class="my-4">
-
                 <div class="small text-black-50">
-
                 <a href="mailto:contato@deflorealma.com.br" target="_top">contato@deflorealma.com.br</a>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
-
-
           <div class="col-md-4 mb-3 mb-md-0">
-
             <div class="card py-4 h-100">
-
               <div class="card-body text-center">
-
                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-
                 <h4 class="text-uppercase m-0">Contato</h4>
-
                 <hr class="my-4">
-
                 <div class="small text-black-50">+55 (11) 9 9298-6994</div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
-
-
         <div class="social d-flex justify-content-center">
-
-          <!--<a href="#" class="mx-2">
-
+          <a href="#" class="mx-2">
             <i class="fab fa-twitter"></i>
-
           </a>
-
           <a href="https://www.facebook.com/pertedecor/" class="mx-2">
-
             <img src="icon/facebook.png" width="32px" height="32px">
-
             <i class="fab fa-facebook-f"></i>
-
           </a>
-
           <a href="https://www.instagram.com/pertedecor/" class="mx-2">
-
             <img src="icon/instagram.png" width="32px" height="32px">
-
             <i class="fab fa-instagram" ></i>
-
           </a>
-
         </div>
-
-
-
       </div>-->
-
     </section>
-
-
-
     <!-- Footer -->
-
     <footer class="bg-black small text-center text-white-50">
-
       <div class="container">
-
         Copyright &copy; Your Website 2018
-
       </div>
-
     </footer>
-
-
-
     <!-- Bootstrap core JavaScript -->
-
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-
     <!-- Plugin JavaScript -->
-
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-
-
     <!-- Custom scripts for this template -->
-
     <script src="js/grayscale.min.js"></script>
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="fancybox/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript">
@@ -577,6 +332,23 @@
     			autoStart : true
     		},
     	})
+      $(function(){
+        $("#divwed").hover(function() {
+          $("#hrwed").slideFadeToggle();
+        });
+        $.fn.slideFadeToggle  = function(speed, easing, callback) {
+          return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+        };
+      });
+      $(function(){
+        $("#divbq").hover(function() {
+          $("#hrbq").slideFadeToggle();
+        });
+        $.fn.slideFadeToggle  = function(speed, easing, callback) {
+          return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+        };
+      });
+      
 	</script>
 </body>
 </html>
