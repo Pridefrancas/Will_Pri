@@ -1,114 +1,325 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="shortcut icon" type="image/gif" href="favicon/favico.png" >
-	<meta charset="utf-8">
-	<title>Buquês</title>
-	<link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.min.css">
-</head>
-<body>
-	<a data-fancybox-trigger="buque" href="javascript:;">Open gallery</a>
-		<div class="small-slider">
-          	<a data-fancybox="buque" href="img/buques/buque.jpg">
-          		<img class="img-fluid" src="img/buquehome.jpg" alt="">
-          	</a>          	
-            <a data-fancybox="buque" href="img/buques/buque0.jpg" hidden="true">
-            <img src="img/buques/buque0.jpg">
-            </a>
-          	<a data-fancybox="buque" href="img/buques/buque01.jpg"></a>
-          	<a data-fancybox="buque" href="img/buques/buque02.jpg"></a>
-          	<a data-fancybox="buque" href="img/buques/buque03.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque04.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque05.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque06.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque07.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque08.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque09.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque10.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque11.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque12.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque13.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque14.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque15.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque16.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque17.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque18.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque19.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque20.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque21.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque22.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque23.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque24.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque25.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque26.jpg"></a>
-            <a data-fancybox="buque" href="img/buques/buque27.jpg"></a>
+<html lang="pt-br">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132433356-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-132433356-1');
+    </script>
 
+    <link rel="shortcut icon" type="image/gif" href="favicon/favico.png" >
+    <!--link rel="icon" type="image/gif" href="favicon/favicon.ico"-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>De Flor e Alma</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/formail.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="css/fonts/fontsface.css" rel="stylesheet">
+    <!--link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"-->
+        <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.min.css">
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger font-home" href="#page-top">De Flor e Alma</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger font-menu" href="#about">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger font-menu" href="#projects">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger font-menu" href="#signup">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger font-menu" href="#formulario">Formulário</a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+         <!-- <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>-->
+          <!--<a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>-->
+          <img src="img/logosemfundo_branco.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </header>
+    <!-- Sobre Nós -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4 font-title">Sobre Nós</h2>
+            <p class="font-text1 text-background">
+              Olá, sou a Aline, advogada por formação, mas desde sempre minha vida cruzou com esse mundo florido e cheio de detalhes dos casamentos e decorações.
+            </p>
+            <p class="font-text1 text-background">
+              Sempre estive de forma despretensiosa envolvida nas decorações dos amigos e da família, mas somente após o meu casamento (2015) onde produzi cada detalhe, tirei esse sonho do papel e de forma gradativa fui começando a viver nesse mundo que tanto me encantava e me aprofundar nessa profissão que hoje exerço de forma integral e não me vejo mais sem.
+            </p>
+            <p class="font-text1 text-background">
+              A De Flor e Alma surgiu para traduzir tudo que sempre mais amei, o romantismo, o vintage, a leveza, a simplicidade dos detalhes, no trabalho feito a mão peça por peça e no trabalho em família, pois por aqui mãe e marido estão também em todos os projetos. Então vamos juntos florir e sonhar esse grande dia!
+            </p>
+           <!-- <img src="img/logo_foot.png" class="img-fluid" alt="">-->
+          </div>
+        </div>
+      </div>
+    </section>    
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+        <!-- Project One Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <a data-fancybox="casamentos" href="img/decor.jpg">
+              <img class="img-fluid" src="img/decor.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <a id="divwed" data-fancybox-trigger="casamentos" href="javascript:;" class="text font-title"> Casamentos </a>
+                  <!--<p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>-->
+                  <hr id="hrwed" class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-wedding">
+            <a data-fancybox="casamentos" href="img/casamentos/casamento01.jpg">
+              <img class="img-fluid" src="img/casamentos/casamento01.jpg" alt="" hidden>
+            </a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento02.jpg" hidden></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento03.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento04.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento05.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento06.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento07.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento08.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento09.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento10.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento11.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento12.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento13.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento14.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento15.jpg" ></a>
+            <!-- a data-fancybox="casamentos" href="img/casamentos/casamento16.jpg" ></a-->
+            <a data-fancybox="casamentos" href="img/casamentos/casamento17.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento18.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento19.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento20.jpg" ></a>
+            <a data-fancybox="casamentos" href="img/casamentos/casamento21.jpg" ></a>
+          </div>
+
+        </div>
+        <!-- Project Two Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <a data-fancybox="buque" href="img/buquehome.jpg" id="second">
+              <img class="img-fluid" src="img/buquehome.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                    <a id="divbq" data-fancybox-trigger="buque" href="javascript:;" class="font-title"> Buquês </a>
+                  <!--<p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p> -->
+                  <hr id="hrbq" class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="gallery-bouquet" style="display: none;">
+            <a data-fancybox="buque" href="img/buques/buque0.jpg" >
+              <img class="img-fluid" src="img/buques/buque0.jpg" alt="">
+            </a>
+            <a data-fancybox="buque" href="img/buques/buque01.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque02.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque03.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque04.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque05.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque06.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque07.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque08.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque09.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque10.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque11.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque12.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque13.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque14.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque15.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque16.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque17.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque18.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque19.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque20.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque21.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque22.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque23.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque24.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque25.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque26.jpg" ></a>
+            <a data-fancybox="buque" href="img/buques/buque27.jpg" ></a>
+          </div>
+        </div>
       </div>
 
+    </section>
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> <br><br>
+            <h2 class="text-white mb-5 font-title">Queremos fazer parte do seu sonho!</h2>
+            <section class="contact-section">
+              <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                      <h4 class="text-uppercase m-0">Endereço</h4>
+                      <hr class="my-4">
+                      <div class="small">Guarulhos, São Paulo - SP</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-envelope text-primary mb-2"></i>
+                    <h4 class="text-uppercase m-0">Email</h4>
+                    <hr class="my-4">
+                    <div class="small">
+                      <a href="mailto:contato@deflorealma.com.br" target="_top">contato@deflorealma.com.br</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                    <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                    <h4 class="text-uppercase m-0">Contato</h4>
+                    <hr class="my-4">
+                    <div class="small">+55 (11) 9 9298-6994</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+              <!--<a href="#" class="mx-2">
+                <i class="fab fa-twitter"></i>
+              </a>-->
+                <a href="https://www.facebook.com/deflorealma/" class="mx-2">
+                  <img src="icon/facebook.png" width="32px" height="32px">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/deflorealma/" class="mx-2">
+                    <img src="icon/instagram.png" width="32px" height="32px">
+                    <i class="fab fa-instagram" ></i>
+                 </a>
+              </div>
+            </section>
+            <!--<form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section bg-black">
+      <div class="container">
+        <div class="row">
+          <div id="formulario" class="col-md-4 mb-3 mb-md-0">
+            <!-- <form action="" method="POST" enctype="multipart/form-data"> -->
+            <form method="post" action="enviar_email.php" name="form">
+              <!-- os dados vai ser enviado para a página que está definida no action=' ' -->
+              <h6 class="nav-link js-scroll-trigger font-menu">Nome</h6>
+              <input class="form-contact-input" type="text" name="nome">
+              <h6 class="nav-link js-scroll-trigger font-menu">E-mail</h6>
+              <input class="form-contact-input" type="text" name="email">
+              <!-- observa o name em cada um dos campos -->
+              <!-- é por eles que o php vai pegar os valores dos campos -->
+              <h6 class="nav-link js-scroll-trigger font-menu">Mensagem</h6>
+              <textarea class="form-contact-textarea" name="mensagem" cols="60" rows="10"></textarea>
+              <input class="btn btn-5" type="submit" value="Enviar" name="enviar">
+              </form>
+          </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Copyright &copy; De Flor e Alma 2019
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="fancybox/dist/jquery.fancybox.min.js"></script>
-<script type="text/javascript">
-	// Open thumbs view straight away for demo purposes
-$.fancybox.defaults.thumbs.autoStart = true;
-
-// ============================
-// Init 1st slider and fancybox
-// ============================
-
-// fancybox
-$().fancybox({
-  selector : '.main-slider .slick-slide:not(.slick-cloned)',
-  backFocus : false
-});
-
-// Slick
-$(".main-slider").slick({
-  slidesToShow   : 3,
-  infinite : true,
-  dots     : false,
-  arrows   : false
-});
-
-// ============================
-// Init 2nd slider and fancybox
-// ============================
-
-// fancybox
-$().fancybox({
-  selector : '.small-slider .slick-slide:not(.slick-cloned)',
-  backFocus : false,
-  afterShow : function( instance, current ) {
-    current.opts.$orig.closest(".slick-initialized").slick('slickGoTo', parseInt(current.index), true);
-  }
-});
-
-// Slick
-// =====
-
-$(".small-slider").slick({
-  slidesToShow   : 1,
-  infinite : true,
-  dots     : false,
-  arrows   : false
-});
-
-// ================================================
-// Attach custom click event on cloned elements, 
-// trigger click event on corresponding link.
-// Note: This will work for all sliders on the page
-// ================================================
-$(document).on('click', '.slick-cloned', function(e) {
-  var $slides = $(this)
-    .parent()
-    .children('.slick-slide:not(.slick-cloned)');
-
-  $slides
-    .eq( ( $(this).attr("data-slick-index") || 0) % $slides.length )
-    .trigger("click.fb-start", { $trigger: $(this) });
-
-  return false;
-});
-</script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+      $('[data-fancybox="buque"]').fancybox({
+        thumbs : {
+          autoStart : true
+        }
+      })
+      $('[data-fancybox="casamentos"]').fancybox({
+        thumbs : {
+          autoStart : true
+        },
+      })
+      $(function(){
+        $("#divwed").hover(function() {
+          $("#hrwed").slideFadeToggle();
+        });
+        $.fn.slideFadeToggle  = function(speed, easing, callback) {
+          return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+        };
+      });
+      $(function(){
+        $("#divbq").hover(function() {
+          $("#hrbq").slideFadeToggle();
+        });
+        $.fn.slideFadeToggle  = function(speed, easing, callback) {
+          return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+        };
+      });
+  </script>
 </body>
 </html>
+
