@@ -5,7 +5,7 @@ $destinatario = "contato@deflorealma.com.br";
 $nome = $_REQUEST['nome'];
 $email = $_REQUEST['email'];
 $mensagem = $_REQUEST['mensagem'];
-$assunto = "Contato via site deflorealma.com.br";
+$assunto = $_REQUEST['assunto'];
 
  // monta o e-mail na variavel $body
 
