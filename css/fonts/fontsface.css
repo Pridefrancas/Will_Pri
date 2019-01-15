@@ -1,18 +1,19 @@
 @font-face{
 	font-family: Baskerville;
-	src: local('Baskerville.ttf'), url('Baskerville.ttf');
+	src: url('Baskerville.ttf');
 
 	font-family: Didot;
-	src: local('Didot.ttf'), url('Didot.ttf');
+	src: url('Didot.ttf');
 
 	font-family: Kefa;
-	src: local('Kefa.ttf'), url('Kefa.ttf');
+	src: url('Kefa.ttf');
 
 	font-family: Kefa-Regular;
-	src: local('Kefa-Regular.ttf'), url('Kefa-Regular.ttf');
+	src: url('Kefa-Regular.ttf');
 
 	font-family: RocketClouds;
-	src: local('RocketClouds.ttf'), url('RocketClouds.ttf');
+	src: url('RocketClouds.ttf');
+
 }
 .font-home{
 	font: 22px RocketClouds;

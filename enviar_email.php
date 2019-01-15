@@ -1,7 +1,5 @@
 <?
 # alterar a variavel abaixo colocando o seu email
-
-//$destinatario = "contato@deflorealma.com.br";
 $destinatario = "contato@deflorealma.com.br";
 
 $nome = $_REQUEST['nome'];
@@ -23,7 +21,7 @@ $body = $body . "===================================" . "\n";
 mail($destinatario, $assunto , $body, "From: $email\r\n");
 
 // redireciona para a página de obrigado
-header("location:buques.html");
+header("location:contato.html");
 
 
 ?>
