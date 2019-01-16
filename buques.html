@@ -50,7 +50,7 @@
               <a class="nav-link js-scroll-trigger font-menu" href="#signup">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger font-menu" href="#formulario">Formulário</a>
+              <a class="nav-link js-scroll-trigger font-menu" href="#orcamento">Orçamento</a>
             </li>            
           </ul>
         </div>
@@ -256,25 +256,19 @@
       </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact-section bg-black">
+    <section id="orcamento" class="contact-section bg-black">
       <div class="container">
         <div class="row">
-          <div id="formulario" class="col-md-4 mb-3 mb-md-0">
-            <!-- <form action="" method="POST" enctype="multipart/form-data"> -->
-            <form method="post" action="enviar_email.php" name="form">
-              <!-- os dados vai ser enviado para a página que está definida no action=' ' -->
-              <h6 class="nav-link js-scroll-trigger font-menu">Nome</h6>
-              <input class="form-contact-input" type="text" name="nome">
-              <h6 class="nav-link js-scroll-trigger font-menu">E-mail</h6>
-              <input class="form-contact-input" type="text" name="email">
-              <h6 class="nav-link js-scroll-trigger font-menu">Assunto</h6>
-              <input class="form-contact-input" type="text" name="assunto" readonly="true" value="SOLICITAÇÃO DE ORCAMENTO">
-              <!-- observa o name em cada um dos campos -->
-              <!-- é por eles que o php vai pegar os valores dos campos -->
-              <h6 class="nav-link js-scroll-trigger font-menu">Mensagem</h6>
-              <textarea class="form-contact-textarea" name="mensagem" cols="60" rows="10"></textarea>
-              <input class="btn btn-5" type="submit" value="Enviar" name="enviar">
-              </form>
+          <div class="container">
+            <h1 class="font-title">Orçamento</h1>
+            <hr class="d-none d-lg-block mb-0 ml-0">
+            <form action="sendmail.php" class="form-contact" method="post" tabindex="1">
+              <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />
+              <input type="email" class="form-contact-input" name="email" placeholder="Email" required />
+              <input id="telefone" type="tel" class="form-contact-input telefone" name="telefone" placeholder="Celular (opcional)" />
+              <textarea class="form-contact-textarea" name="mensagem" placeholder="Deixe uma mensagem" required></textarea>
+              <button type="submit" class="form-contact-button btn-5">Enviar</button>
+            </form>
           </div>
       </div>
     </section>
@@ -293,8 +287,10 @@
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
     <script src="fancybox/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript">
+      $('.telefone').mask('(00) 0 0000 0000');
       $('[data-fancybox="buque"]').fancybox({
         thumbs : {
           autoStart : true

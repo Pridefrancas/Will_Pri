@@ -7,28 +7,46 @@
   width: 100%;
   font-family: "Arial", Times, serif;
 }
-
 .form-contact-input {
   width: 100%;
-  color: #292929;
-  font-size: 18px;
-  background-color: #E9E9E9;
+  color: #000000;
+  font-size: 16px;
+  font-family: "Didot";
+  background-color: #dbccaeb0;
   border: 1px solid #E9E9E9;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  height: 40px;
+  height: 30px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
+  border-bottom: 1px solid #E9E9E9;;
+  border-left: 1px solid #E9E9E9;;
+  text-indent: 10px;
+}
+.form-contact-input:hover {
+  opacity: 1;
+  border: 2px solid #ffffff;
+  box-shadow: 4px 4px grey;
+  border-radius: 4px;
+}
+.form-contact-input:focus {
+  opacity: 1;
+  border: 2px solid #6dd5fab5;
+  box-shadow: 4px 4px grey;
+  border-radius: 4px;
+}
+.form-contact-input:active {
+  opacity: 1;
+  border: 2px solid #6dd5fab5;
+  box-shadow: 4px 4px grey;
+  border-radius: 4px;
 }
 
 .form-contact-textarea {
   width: 100%;
-  color: #292929;
-  font-size: 18px;
-  background-color: #E9E9E9;
+  color: #000000;
+  font-size: 14px;
+  background-color: #dbccaeb0;
   border: 1px solid #E9E9E9;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -37,13 +55,24 @@
   margin-bottom: 20px;
   border-bottom: 1px solid #ccc;
   border-left: 1px solid #ccc;
-  text-indent: 20px;
-  padding-top: 16px;
+  text-indent: 10px;
+  padding-top: 5px;
   padding-left: 0;
   padding-right: 0;
-  font-family: "Arial", Times, serif;
+  font-family: "Didot";
 }
-
+.form-contact-textarea:hover {
+  opacity: 1;
+  border: 2px solid #ffffff;
+  box-shadow: 4px 4px grey;
+  border-radius: 4px;
+}
+.form-contact-textarea:hover {
+  opacity: 1;
+  border: 2px solid #ffffff;
+  box-shadow: 4px 4px grey;
+  border-radius: 4px;
+}
 .form-contact-button {
   width: 100%;
   font-size: 18px;
@@ -53,18 +82,26 @@
   opacity: .8;
   margin-bottom: 20px;
   cursor: pointer;
-  background: #B22222;
+  background: #dbccaeb0;
   display: block;
   border: none;
   border-bottom: 1px solid #500707;
   border-right: 1px solid #500707;
   transition: 1s;
 }
-
 .form-contact-button:hover {
   opacity: 1;
+  background: #6dd5fab5;
 }
-
+.form-contact-button:focus {
+  opacity: 1;
+  background: #6dd5fab5;
+}
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
 /*CSS for buttons */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 
