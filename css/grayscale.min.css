@@ -270,6 +270,28 @@
 	letter-spacing:.15rem;
 	border:0
 }
+.form-section
+{
+	padding: 7rem 0;
+	background:-webkit-gradient(linear,left top,left bottom,from(rgba(22,22,22,.5)),color-stop(75%,rgba(22,22,22,.6)),to(#535353)),url(../img/orcfundo.png);
+	background:linear-gradient(to bottom,rgba(22,22,22,0.6) 0,rgba(22,22,22,1) 75%#d8e7f3  100%),url(../img/orcfundo.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-size:cover
+}
+.form-section .form-inline input
+{
+	-webkit-box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;
+	box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;
+	padding:1.25rem 2rem;
+	height:auto;
+	font-family:'Varela Round';
+	font-size:80%;
+	text-transform:uppercase;
+	letter-spacing:.15rem;
+	border:0
+}
 .contact-section
 {
 	padding:1rem 0 0

@@ -1,6 +1,6 @@
 <?
+header('Content-type: text/html; charset=iso-8859-1');
 # alterar a variavel abaixo colocando o seu email
-
 //$destinatario = "contato@deflorealma.com.br";
 $destinatario = "contato@deflorealma.com.br";
 

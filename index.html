@@ -13,14 +13,17 @@
   	<link rel="shortcut icon" type="image/gif" href="favicon/favico.png" >
     <!--link rel="icon" type="image/gif" href="favicon/favicon.ico"-->
     <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>De Flor e Alma</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/formail.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="css/fonts/fontsface.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charm:400,700" rel="stylesheet">
     <!--link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"-->
@@ -47,6 +50,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger font-menu" href="#signup">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger font-menu" href="#orcamento">Orçamento</a>
             </li>
           </ul>
         </div>
@@ -185,25 +191,13 @@
           </div>
         </div>
       </div>
-
     </section>
-
-
-
     <!-- Signup Section -->
-
     <section class="signup-section">
-
       <div id="signup"  class="container">
-
         <div class="row">
-
           <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-
-
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i> <br><br>
-
             <h2 class="text-white mb-5 font-title">Queremos fazer parte do seu sonho!</h2>
             <section class="contact-section">
               <div class="row">
@@ -263,57 +257,23 @@
       </div>
     </section>
     <!-- Contact Section -->
-   <!--<section class="contact-section bg-black">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Endereço</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">Guarulhos, São Paulo - SP</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                <a href="mailto:contato@deflorealma.com.br" target="_top">contato@deflorealma.com.br</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Contato</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">+55 (11) 9 9298-6994</div>
-              </div>
-            </div>
-          </div>
+   <section id="orcamento" class="form-section">
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <h1 class="font-title">Orçamento</h1>
+          <hr class="d-none d-lg-block mb-0 ml-0">
+          <form action="sendmail.php" class="form-contact" method="post" tabindex="1">
+            <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />
+            <input type="email" class="form-contact-input" name="email" placeholder="Email" required />
+            <input id="telefone" type="tel" class="form-contact-input telefone" name="telefone" placeholder="Celular (opcional)" />
+            <textarea class="form-contact-textarea" name="mensagem" placeholder="Deixe uma mensagem" required></textarea>
+            <button type="submit" class="form-contact-button btn-5">Enviar</button>
+          </form>
         </div>
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.facebook.com/deflorealma/" class="mx-2">
-            <img src="icon/facebook.png" width="32px" height="32px">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/deflorealma/" class="mx-2">
-            <img src="icon/instagram.png" width="32px" height="32px">
-            <i class="fab fa-instagram" ></i>
-          </a>
-        </div>
-      </div>-->
-    </section>
+      </div>
+    </div>
+  </section>
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
       <div class="container">
@@ -329,8 +289,10 @@
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
     <script src="fancybox/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript">
+      $('.telefone').mask('(00) 0 0000-0000');
     	$('[data-fancybox="buque"]').fancybox({
     		thumbs : {
     			autoStart : true
