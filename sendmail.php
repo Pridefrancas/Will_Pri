@@ -1,11 +1,13 @@
 <?
+header('Content-type: text/html; charset=iso-8859-1');
 # alterar a variavel abaixo colocando o seu email
-
 //$destinatario = "contato@deflorealma.com.br";
 $destinatario = "contato@deflorealma.com.br";
+$bcc = "pertedecor@gmail.com";
+$headers .="Bcc: {$bcc}\r\n";
 
 $nome = $_REQUEST['nome'];
-$email = $_REQUEST['email'];
+$email = $headers . $_REQUEST['email'];
 $telefone = $_REQUEST['telefone'];
 $mensagem = $_REQUEST['mensagem'];
 $assunto = "Solicitação de Orçamento via site deflorealma.com.br";
@@ -27,7 +29,7 @@ $email_headers = implode("\n", array("From: $nome", "Reply-To: $email", "Subject
 //Verifica se os campos estão preenchidos para enviar então o email
 if (!empty($nome) && !empty($email) && !empty($mensagem)) {
     // envia o email
-    mail($destinatario, $assunto , $body, "From: $email\r\n");
+    mail($destinatario, $assunto , $body, $email_headers);
     $msg = "Sua mensagem foi enviada com sucesso.";
     echo "<script>alert('$msg');window.location.assign('http://www.deflorealma.com.br/#page-top');</script>";
 } else {

@@ -2,8 +2,8 @@
 	font-family: Baskerville;
 	src: url('Baskerville.ttf');
 
-	font-family: Didot;
-	src: url('Didot.ttf');
+	/*font-family: Didot;
+	src: url('Didot-HTF-B06-Bold-Ital.ttf');*/
 
 	font-family: Kefa;
 	src: url('Kefa.ttf');
@@ -19,7 +19,7 @@
 	font: 22px RocketClouds;
 }
 .font-menu{
-	font: 18px RocketClouds;
+	font: 16px RocketClouds;
 }
 .font-title{
 	font: 26px RocketClouds;
@@ -29,7 +29,8 @@
 }
 
 .font-text1{
-	font: 20px Didot;
+	font-family: 'Charm', cursive;
+	font-size: 18px;
 	color: #ffffffb8;
 }
 
