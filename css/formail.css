@@ -31,13 +31,13 @@
 }
 .form-contact-input:focus {
   opacity: 1;
-  border: 2px solid #6dd5fab5;
+  border: 2px solid #d8e7f3;
   box-shadow: 4px 4px grey;
   border-radius: 4px;
 }
 .form-contact-input:active {
   opacity: 1;
-  border: 2px solid #6dd5fab5;
+  border: 2px solid #d8e7f3;
   box-shadow: 4px 4px grey;
   border-radius: 4px;
 }
@@ -91,11 +91,11 @@
 }
 .form-contact-button:hover {
   opacity: 1;
-  background: #6dd5fab5;
+  background: #d8e7f3;
 }
 .form-contact-button:focus {
   opacity: 1;
-  background: #6dd5fab5;
+  background: #d8e7f3;
 }
 input[type=text]:focus, textarea:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
