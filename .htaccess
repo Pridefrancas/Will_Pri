@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?deflorealma\.com.br
+RewriteRule ^(.*)$ https://www.deflorealma.com.br/$1 [R,L]
