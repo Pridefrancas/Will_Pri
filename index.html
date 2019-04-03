@@ -61,6 +61,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger font-menu" href="#orcamento">Orçamento</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger font-menu" href="#parceiros">Parceiros</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -265,29 +268,75 @@
       </div>
     </section>
     <!-- Contact Section -->
-   <section id="orcamento" class="form-section">
+   <section class="form-section">
     <div class="container">
-      <div class="row">
+      <div id="orcamento" class="row">
         <div class="container">
           <h1 class="font-title">Orçamento</h1>
+          <!--h1 class="font-title" style="color: white;">Desculpe, área de solicitações de orçamentos em manutenção! Por favor, entre em contato por nossas redes sociais ou por email contato@deflorealma.com.br. Obrigado!</h1-->
           <hr class="d-none d-lg-block mb-0 ml-0">
-          <form action="sendmail.php" class="form-contact" method="POST" tabindex="1">
-            <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />
-            <input type="email" class="form-contact-input" name="email" placeholder="Email" required />
-            <input id="telefone" type="tel" class="form-contact-input telefone" name="telefone" placeholder="Celular (opcional)" />
-            <textarea class="form-contact-textarea" name="mensagem" placeholder="Deixe uma mensagem" required></textarea>
+          <form action="sendmail.php" class="form-contact" method="post" tabindex="1">
+            <input type="text" class="form-contact-input" name="Nome" placeholder="Nome" required />
+            <input type="email" class="form-contact-input" name="Email" placeholder="Email" required />
+            <input id="telefone" type="tel" class="form-contact-input telefone" name="Fone" placeholder="Celular" />
+            <textarea class="form-contact-textarea" name="Mensagem" placeholder="Deixe uma mensagem" required></textarea>
             <button type="submit" class="form-contact-button btn-5">Enviar</button>
           </form>
         </div>
       </div>
     </div>
   </section>
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        Copyright &copy; De Flor e Alma 2019
+
+  <section class="form-section">
+    <div id="parceiros" class="container">
+      <h1 class="font-title">Parceiros</h1>
+      <div class="d-flex justify-content-center">
+        <div class="row">
+          
+          <div class="col text-center">
+            <a href="https://www.instagram.com/alemdedois_/">
+              <img class="img-fluid d-block rounded-circle" src="https://lh3.googleusercontent.com/CravNVeiwOMrTHmdDolXtZ2jGvU8vYwTjgvJSE0MrHdZkYqUBQBmBekS5y1U1Npq3hCtXxfzQXzPYvPYBN1RHz2G-gANDwPLJeqANhfKKBtJQbGttaZ9H6fQ9FFfJfB3atPdeh5j-9qO-P0JwYtEmDzUYy5xsePUQR9B2ZZpwUYyk1e1w0zMGzfxE8Dj2MlXsIk4Zz1-JrKGaaujhRgenF6Oggx5EUaumEKmDLcZV8CHxAh6UkQRRuizLWRn_dJIEUlg-9nkWU2ngFq4sr3XeVu-XeOOGgiEH1E-fXwfk0Z3WLxEvvOCjbqA7n-tG9hea_m-0_5Sm6MMEdPmScrfwb4W17wwjsIjl7iTWFtnrbwKnEkkLYBGY1Uo-NXlYX7Bccp6R32VdjQ5tErvDv1ltmbhX34ASLetGeGIXYN93mE-rz8aKQfiMkv3B5_UmDh2SM3-SF8GmXobB_09-Pxq6f_oLtLEsj7tQ5k3EPiaZWoEZWM0VmtnYqM39AqeTaujieqdIrnV8kkYYkWbuMrTVVhuWjUoaZm1FFUO-ymOZLZVwXR5wEJUVQabSL3qIhSxIAVNYOBfZ0XH6rjcXDD5UTm81PKOh4Jro76giYQ=w320-h200-k"
+              alt="Além de Dois">
+              <p class="font-text1 mt-0 mb-1">Além de Dois</p>
+              <p class="text">@alemdedois_</p>
+            </a>
+            <p class="text-uppercase m-0 mt-0 mb-1">Fotografia</p>
+          </div>
+
+          <div class="mx-auto" style="width: 200px;">
+          </div>
+
+          <div class="col text-center">
+            <a href="https://www.instagram.com/amaryllis_floral/">
+              <img class="img-fluid d-block rounded-circle" src="https://lh3.googleusercontent.com/lltcXNLjHWBUoFAPNvPEw-pO5GMxPBnIrMKjRsOBInYfqOWXAPAO8Kd8JZGBzr5mwZXfPGrTTKh6dfRokzpm7J9c3JLOXzgkC7ZxUEAJWUFrdJo-vv11CaQXhO4aZjVS85ULRrNH8qCBAhMwBYoGfd3g9K86_SxhVlPpVWWQupNlouMHXfD6yflmnshbF5Q4VIC8rIw0Rb78xMc8W51k4Aam9MeidYGJ7SxJ9z4Xi2TrYcrduvKUMCDiObUpsEMzbuvGv4Nu7BAWv-y20BfDdgGkWJ3tspe6WFn8C9ZxkeG2pA9cVosE2_4hUK84nV26kKuAJYFqLJ1gGDGrs6abaoYCflitG_k4kMQ8xUFli1vgSo5_1IvSrrSLy9NAs6AN_Q44R9iHSlcXvovgpDBLX68f-wG6mLmT8vk-A8ATeq_caLhPImyvASdpl_S0QKQtML-QvovsQOeaUH36Wq3Eq5X3KkBTHBJnWKJ6ZfemPe65WNoD2Z238IucjK7PwrKuMVh2QJjG_l4UycEoSzMeCaqhoi75b1wRglRQ9G6wB29Vlb7LqGuX8-zub1IsNXSDdpsaAi1_yPWjBONLjCH9KXMiAxRsac1MqdEK7wo=w320-h200-k" alt="Amaryllis Floral Studio">
+              <p class="font-text1 mt-0 mb-1">Amaryllis</p>
+              <p class="text">@amaryllis_floral</p>
+            </a>
+            <p class="text-uppercase m-0 mt-0 mb-1">Floral</p>
+          </div>
+
+          <div class="mx-auto" style="width: 200px;">
+          </div>
+
+          <div class="col text-center">
+            <a href="https://www.instagram.com/_nossodiaassessoria">
+              <img class="img-fluid d-block rounded-circle" src="https://lh3.googleusercontent.com/-SdVLuId1VWjN515wj7ZLnYvC3D_todyV2SSYqih-SL6XAPmimcp8XCin0qkXrfGN952_6obZIt3XC-9JGgRqnmcgbGCB3gx3z5VItFSfvyYtt4nNqTGJBoXfiYAAs6BOj5JqGXbMZFtSXrtHmYqthdBMOTrc_qGNcGL_WTi0SbMXxwZmLN9UzBy6dq2w-d5-fAlcbC-HLlxLXNsUH0pAnCGmhC4SqgEq-6dotLNmQX0PfZCtXHqIypUMkdFHjA48LqxHIcEv5YZZPvXBS98qsRW_xCPeqXcqJsyx4s3rhUn6tzTSDWQs73L-CM2BDShn9uG5MtPeHVSic02MV9_MKGsZSfs8yLlXb3BjzLypVU_OI-hEOY5XyalJRDIQ2S-2Rf6POyihGVz1UTMuSq1fQRPR3i3PoOAErZD2yFaQdHJXV3C1xknWjO9L7_fNsyXLmDomTu8hQbAVhK_XlSF8OCx_rZ9hODbCKfFvNZt_QuTbKn09Z5sUvzor97Uq5PMHZagKeTWP8zJVAbWaTWPPs05Ix0FQTAl5LGCob-2Rj9ag1GJA6XG_fos6Eusk30hpFukCxTLg-Qtz6cK4KBjclV_S5DFkRaIBr7O6Z0=w1366-h347" alt="Nosso dia Assessoria">
+              <p class="font-text1 mt-0 mb-1">Nosso Dia</p>
+              <p class="text">@_nossodiaassessoria</p>
+            </a>
+            <p class="text-uppercase m-0 mt-0 mb-1">Assessoria</p>
+            
+          </div>
+        </div>
       </div>
-      <span id="siteseal">
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+    Copyright &copy; De Flor e Alma 2019
+  </div>
+  <span id="siteseal">
         <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=BEXtjvQMKbHzukhEkhKSA2zdzuyYoAG8r0Hau2BeRbj9PmTZgKYJ7vhzL8Q7">
         </script>
       </span>
@@ -300,7 +349,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--script src="js/jquery-3.3.1.min.js"></script-->
     <script src="js/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
     <script src="fancybox/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript">
@@ -331,7 +380,6 @@
           return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
         };
       });
-      
 	</script>
 </body>
 </html>

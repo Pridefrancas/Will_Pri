@@ -19,7 +19,8 @@
 	font: 22px RocketClouds;
 }
 .font-menu{
-	font: 16px RocketClouds;
+	font: 12px RocketClouds;
+	font-weight: bolder;
 }
 .font-title{
 	font: 26px RocketClouds;
