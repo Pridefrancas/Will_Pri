@@ -276,10 +276,11 @@
           <!--h1 class="font-title" style="color: white;">Desculpe, área de solicitações de orçamentos em manutenção! Por favor, entre em contato por nossas redes sociais ou por email contato@deflorealma.com.br. Obrigado!</h1-->
           <hr class="d-none d-lg-block mb-0 ml-0">
           <form action="sendmail.php" class="form-contact" method="post" tabindex="1">
-            <input type="text" class="form-contact-input" name="Nome" placeholder="Nome" required />
-            <input type="email" class="form-contact-input" name="Email" placeholder="Email" required />
-            <input id="telefone" type="tel" class="form-contact-input telefone" name="Fone" placeholder="Celular" />
-            <textarea class="form-contact-textarea" name="Mensagem" placeholder="Deixe uma mensagem" required></textarea>
+            <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />
+            <input type="email" class="form-contact-input" name="email" placeholder="Email" required />
+            <input id="telefone" type="tel" class="form-contact-input telefone" name="telefone" placeholder="Celular" />
+            <input type="text" class="form-contact-input" name="tipo" placeholder="Tipo de evento"/>
+            <textarea class="form-contact-textarea" name="mensagem" placeholder="Deixe uma mensagem" required></textarea>
             <button type="submit" class="form-contact-button btn-5">Enviar</button>
           </form>
         </div>
