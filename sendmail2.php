@@ -8,16 +8,22 @@ function sanitize_my_email($field) {
     }
 }
 
-$nome = $_POST['Nome'];
-$email = $_POST['Email'];
-$fone = $_POST['Fone'];
-$tipo = $_POST['Tipo'];
-$mensagem = $_POST['Mensagem'];
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$fone = $_POST['telefone'];
+$tipo = $_POST['tipo'];
+$data = $_POST['data'];
+$mensagem = $_POST['mensagem'];
 
 $to_email = 'contato@deflorealma.com.br';
 $subject = 'Contato via site (deflorealma.com.br)';
 //$message = 'This mail is sent using the PHP mail ';
-$message ='Nome: '.$nome."\r\n".'e-Mail: '.$email."\r\n".'Telefone: '.$fone."\r\n".'Tipo de evento: '.$tipo."\r\n".'Comentario: '.$mensagem;
+$message ='Nome: '.$nome."\r\n"
+.'e-Mail: '.$email."\r\n"
+.'Telefone: '.$fone."\r\n"
+.'Tipo de evento: '.$tipo."\r\n"
+.'Data do evento: '.$data."\r\n"
+.'Comentario: '.$mensagem;
 $headers = 'From: contato@deflorealma.com.br';
 //check if the email address is invalid $secure_check
 $secure_check = sanitize_my_email($to_email);

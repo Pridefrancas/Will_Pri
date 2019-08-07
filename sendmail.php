@@ -9,6 +9,7 @@
 	$email = $_POST['email'];
 	$telefone = $_POST['telefone'];
 	$tipo = $_POST['tipo'];
+	$data = $_POST['data'];
 	$mensagem = $_POST['mensagem'];
 	$data_envio = date('d/m/Y');
 	$hora_envio = date('H:i:s');
@@ -83,6 +84,9 @@
 							<td width='320'>Tipo de evento: <b> $tipo </b> </td>
 						</tr>
 						<tr>
+							<td width='320'>Data do evento: <b> $data </b> </td>
+						</tr>
+						<tr>
 							<td width='320'>Mensagem: <b> $mensagem </b> </td>
 						</tr>
 					</td>
@@ -97,7 +101,7 @@
 	// emails para quem será enviado o formulário
 	$emailenviar = "contato@deflorealma.com.br, aline.teixeiradoliveira@gmail.com";
 	$destino = $emailenviar;
-	$assunto = "Contato pelo Site deflorealma.com.br";
+	$assunto = "De Flor e Alma (via site)";
 	 // É necessário indicar que o formato do e-mail é html
 	$headers = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
